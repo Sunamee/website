@@ -1,42 +1,41 @@
 # Sunamee
 
-**One Vision. Multiple Solutions. Unlimited Possibilities.**
+**Health & Wellness • Sports • Technology**
 
-The website for Sunamee, a brand consulting and market development firm with four categories:
+Sunamee is a relationship-driven marketing and consulting company connecting athletes, practitioners, consumers and brands through innovative experiential marketing, strategic partnerships, events, and digital engagement.
+
+## Categories
 
 - **Sunamee Solutions**: brand strategy, product development and market expansion
-- **Sunamee Sports**: sports partnerships, athlete relationships and sponsorships
-- **Sunamee Wellness**: health, wellness, recovery and lifestyle solutions
+- **Sunamee Sports**: connecting brands with athletes and teams for grassroots marketing, ambassadorship, and NIL
+- **Sunamee Wellness**: connecting health & wellness brands with the right audiences and ambassadors
 - **Sunamee Technology**: technology integration, innovation and digital solutions
 
-## What's in this folder
+## What's in this repository
 
 | File | What it is |
 |---|---|
-| `index.html` | The complete site in one file. Styles, scripts, photos and client logos are all built in, so nothing else needs to be uploaded. |
+| `index.html` | The complete one-page site. Styles, scripts and photos are all built into this single file, so nothing else needs to be uploaded. |
 | `README.md` | This file. |
 
-The site has a home page with the four category quadrants, a Categories section, About Us, Approach, a Client Portfolio page (opened from **Clients** in the menu) and a Contact section.
+The page has an introduction, the four category cards, About Us, How we work (Discover, Define, Deliver, Expand) and a Contact section with an inquiry form.
 
-## Publish it with GitHub Pages
+## Publish with GitHub Pages
 
-1. Create a new repository on GitHub and upload `index.html` and `README.md` to it.
-2. In the repository, open **Settings → Pages**.
+1. Upload `index.html` and `README.md` to the repository (**Add file → Upload files → Commit changes**).
+2. Open **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to *Deploy from a branch*, choose the `main` branch and the `/ (root)` folder, then select **Save**.
 4. After a minute or two, the site is live at `https://<your-username>.github.io/<repository-name>/`.
 
 To use your own domain, such as `sunamee.com`, add it under **Settings → Pages → Custom domain** and follow GitHub's DNS instructions.
 
-## Before going live
+## Updating the site
 
-- **Contact email:** `hello@sunamee.com` is a placeholder. Search `index.html` for it and replace it with your real address.
-- **Contact form:** the form doesn't send messages yet. Connect a form service such as Formspree or Netlify Forms to receive inquiries.
-- **Social icons:** the Instagram, Facebook, X, TikTok and LinkedIn icons in the footer link to `#`. Replace each `href="#"` on the `social-link` elements with your profile URLs.
-- **Placeholder images:** the four category cards and the About and Approach sections show labeled placeholders until real photos are added.
-- **Client Portfolio:** the cards are placeholders. Add each client's name, logo and description.
-- **Trademark:** the site shows ™ after the Sunamee name. Switch to ® only once the mark is registered with the USPTO.
-- **Permissions:** confirm you have permission for every photo, client logo and person shown on the site.
+Upload a new `index.html` with the same name; GitHub replaces the old file. The live site refreshes within a few minutes (use a hard refresh, Ctrl+Shift+R or Cmd+Shift+R, if the old version still shows).
 
-## Credits
+## Notes
 
-Social media icons are from [Font Awesome Free](https://fontawesome.com) (CC BY 4.0). Fonts are loaded from Google Fonts.
+- The contact form does not send email yet. Submitting shows a thank-you message asking the visitor to email `hello@sunamee.com`. To receive submissions directly, connect the form to a form service such as Formspree.
+- Photos include people and third-party brands. Confirm permission from the people pictured before promoting the site.
+
+© 2026 Sunamee Solutions. All Rights Reserved.
