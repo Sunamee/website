@@ -15,14 +15,15 @@ Sunamee is a relationship-driven marketing and consulting company connecting ath
 
 | File | What it is |
 |---|---|
-| `index.html` | The complete one-page site. Styles, scripts and photos are all built into this single file, so nothing else needs to be uploaded. |
+| `index.html` | The complete one-page site. Styles, scripts and photos are all built into this single file. |
+| `share.jpg` | The preview image shown when the link is shared by text message or on social media. Keep it in the same folder as `index.html`. |
 | `README.md` | This file. |
 
 The page has an introduction, the four category cards, About Us, How we work (Discover, Define, Deliver, Expand) and a Contact section with an inquiry form.
 
 ## Publish with GitHub Pages
 
-1. Upload `index.html` and `README.md` to the repository (**Add file → Upload files → Commit changes**).
+1. Upload `index.html`, `share.jpg` and `README.md` to the repository (**Add file → Upload files → Commit changes**).
 2. Open **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to *Deploy from a branch*, choose the `main` branch and the `/ (root)` folder, then select **Save**.
 4. After a minute or two, the site is live at `https://<your-username>.github.io/<repository-name>/`.
