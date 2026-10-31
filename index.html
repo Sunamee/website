@@ -262,7 +262,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
       <li><a href="#divisions">Categories</a></li>
       <li><a href="#about">About Us</a></li>
       <li><a href="#approach">Approach</a></li>
-      <li><a href="#clients" id="navClients">Clients</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul></nav>
   </div>
@@ -375,76 +374,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
   </section>
 </main>
 
-<main class="wrap" id="clients" hidden>
-  <div class="cp-hero">
-    <span class="eyebrow">Client Portfolio</span>
-    <h1>The brands we work with.</h1>
-    <p>From product launches to athlete partnerships, these are the companies that trust Sunamee to help them grow.</p>
-  </div>
-
-  <div class="cp-filters" role="group" aria-label="Filter clients by category">
-    <button type="button" class="chip on" data-filter="all" aria-pressed="true">All clients</button>
-    <button type="button" class="chip sports" data-filter="sports" aria-pressed="false">Sports</button>
-    <button type="button" class="chip wellness" data-filter="wellness" aria-pressed="false">Wellness</button>
-    <button type="button" class="chip tech" data-filter="tech" aria-pressed="false">Technology</button>
-  </div>
-
-  <ul class="cp-grid" id="cpGrid">
-    <li class="client sports" data-div="sports">
-      <div class="logo-box" aria-hidden="true"><span>Logo</span></div>
-      <div class="client-body">
-        <span class="ctag">Sunamee Sports</span>
-        <h2>Client Name</h2>
-        <p>One or two sentences on the partnership, such as an athlete ambassador program or a team sponsorship.</p>
-      </div>
-    </li>
-    <li class="client sports" data-div="sports">
-      <div class="logo-box" aria-hidden="true"><span>Logo</span></div>
-      <div class="client-body">
-        <span class="ctag">Sunamee Sports</span>
-        <h2>Client Name</h2>
-        <p>One or two sentences on the partnership, such as event activation or a league relationship.</p>
-      </div>
-    </li>
-    <li class="client wellness" data-div="wellness">
-      <div class="logo-box" aria-hidden="true"><span>Logo</span></div>
-      <div class="client-body">
-        <span class="ctag">Sunamee Wellness</span>
-        <h2>Client Name</h2>
-        <p>One or two sentences on the work, such as positioning a recovery product for athletes and clinics.</p>
-      </div>
-    </li>
-    <li class="client wellness" data-div="wellness">
-      <div class="logo-box" aria-hidden="true"><span>Logo</span></div>
-      <div class="client-body">
-        <span class="ctag">Sunamee Wellness</span>
-        <h2>Client Name</h2>
-        <p>One or two sentences on the work, such as bringing a lifestyle or nutrition brand to new customers.</p>
-      </div>
-    </li>
-    <li class="client tech" data-div="tech">
-      <div class="logo-box" aria-hidden="true"><span>Logo</span></div>
-      <div class="client-body">
-        <span class="ctag">Sunamee Technology</span>
-        <h2>Client Name</h2>
-        <p>One or two sentences on the work, such as integrating a treatment device into clinics and training facilities.</p>
-      </div>
-    </li>
-    <li class="client tech" data-div="tech">
-      <div class="logo-box" aria-hidden="true"><span>Logo</span></div>
-      <div class="client-body">
-        <span class="ctag">Sunamee Technology</span>
-        <h2>Client Name</h2>
-        <p>One or two sentences on the work, such as launching a digital platform or app.</p>
-      </div>
-    </li>
-  </ul>
-
-  <section class="cp-cta">
-    <h2>Want to see your brand here?</h2>
-    <a class="btn-solid" href="#contact">Start a conversation</a>
-  </section>
-</main>
 
 <footer>
   <div class="wrap foot">
@@ -471,26 +400,6 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:2
     note.textContent='Thanks, '+n.split(' ')[0]+'. Please send these details to '+email+' to reach our team.';
   });
 
-  /* Page switching: #clients shows the portfolio page, any other link shows the home page */
-  var home=document.getElementById('home'),clients=document.getElementById('clients'),navC=document.getElementById('navClients');
-  function route(){
-    var h=location.hash.replace('#','');
-    var showClients=h==='clients';
-    clients.hidden=!showClients; home.hidden=showClients;
-    navC.classList.toggle('active',showClients);
-    if(showClients){window.scrollTo(0,0);return;}
-    var t=h&&document.getElementById(h);
-    if(t&&t!==home){t.scrollIntoView();}else{window.scrollTo(0,0);}
-  }
-  window.addEventListener('hashchange',route); route();
-
-  /* Division filter */
-  var chips=document.querySelectorAll('.chip'),cards=document.querySelectorAll('.client');
-  chips.forEach(function(c){c.addEventListener('click',function(){
-    var f=c.getAttribute('data-filter');
-    chips.forEach(function(x){var on=x===c;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on);});
-    cards.forEach(function(card){card.hidden=!(f==='all'||card.getAttribute('data-div')===f);});
-  });});
 })();
 </script>
 
